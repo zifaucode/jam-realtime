@@ -13,6 +13,8 @@
 /*Selesai Menampilkan Waktu*/
 /*Menampilakan Hari*/
 <?php
+date_default_timezone_set('Asia/Jakarta');
+setlocale(LC_TIME, 'id_ID.utf8');
 $hari = date('l');
 /*$new = date('l, F d, Y', strtotime($Today));*/
 if ($hari=="Sunday") {
@@ -35,6 +37,8 @@ if ($hari=="Sunday") {
 
 /*Menampilkan Tanggal*/
 <?php
+date_default_timezone_set('Asia/Jakarta');
+setlocale(LC_TIME, 'id_ID.utf8');
 $tgl =date('d');
 echo $tgl;
 $bulan =date('F');
